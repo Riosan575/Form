@@ -6,7 +6,7 @@
     <title>Formulario de Envío</title>
 </head>
 <body>
-    <form id="miFormulario" action="http://127.0.0.1:8080/" method="post">
+    <form id="miFormulario" action="https://riosan575.github.io/Form/" method="post">
         <!-- Campos del formulario -->
         <label for="dato1">Dato 1:</label>
         <input type="text" id="dato1" name="dato1" />
@@ -16,26 +16,6 @@
     
         <input type="submit" value="Enviar" />
     </form>
-
-    <div id="resultados"></div>
-
-    <script>
-        document.getElementById('miFormulario').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el comportamiento predeterminado del formulario (enviar y recargar la página)
-
-            // Obtén los valores de los campos del formulario
-            var dato1 = document.getElementById('dato1').value;
-            var dato2 = document.getElementById('dato2').value;
-
-            // Crea un elemento para mostrar los resultados
-            var resultadosDiv = document.getElementById('resultados');
-            var resultadosP = document.createElement('p');
-            resultadosP.textContent = 'Dato 1: ' + dato1 + ', Dato 2: ' + dato2;
-
-            // Agrega el elemento al DOM
-            resultadosDiv.appendChild(resultadosP);
-        });
-    </script>
 </body>
 </html>
 
